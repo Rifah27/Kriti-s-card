@@ -1,4 +1,3 @@
-/** Card open & motion timing */
 export const easeLuxury = [0.22, 1, 0.36, 1];
 
 export const CARD_OPEN = {
