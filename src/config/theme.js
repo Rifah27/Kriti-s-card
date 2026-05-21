@@ -17,7 +17,7 @@ Machlii party me mujhe 2 samosa, ek coke, 4 chocolates aur ek pastry bhej dena �
 
 Ab jao aur apna special day full birthday legend ki tarah enjoy karo 😌💅✨
 
-Happy Birthday once again, Machliiiii 🐟💖🎂
+Happy Birthday once again, Machliiiii 🐟🎂
 
 From,`;
 
