@@ -25,5 +25,5 @@ export const MACHLI_WHISPERS = [
   'machli energy',
   '🐟',
   'splash',
-  'tiny fish approved'
+  'tiny fish approved',
 ];
