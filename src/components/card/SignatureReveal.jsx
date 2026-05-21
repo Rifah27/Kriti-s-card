@@ -13,7 +13,7 @@ export function SignatureReveal() {
     >
       <svg
         viewBox="0 0 120 36"
-        className="h-8 w-28 text-violet-900/85"
+        className="h-8 w-28 text-violet-900"
         aria-hidden
       >
         <motion.path
@@ -38,12 +38,12 @@ export function SignatureReveal() {
         />
       </svg>
       <motion.p
-        className="font-display text-base italic text-violet-800/70 tracking-wide"
+        className="font-display text-base italic text-stone-900 tracking-wide"
         initial={{ opacity: 0, x: -6 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 1.5, duration: 0.7 }}
       >
-        — {CARD.from}
+        — {CARD.from} Kabootar
       </motion.p>
     </motion.div>
   );

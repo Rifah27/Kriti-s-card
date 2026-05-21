@@ -1,22 +1,26 @@
-/** Copy & identity — Kriti is primary; Machli only for playful accents */
+/** Copy & identity — Kriti is primary; RK is the thoughtful sender. */
 export const CARD = {
   to: 'Kriti',
   from: 'RK',
 };
 
-export const INSIDE_MESSAGE = `Happy Birthday Kriti 🎂✨
+export const INSIDE_MESSAGE = `Dear Machliii 🐟,
 
-Wishing you a day full of happiness, laughter, good memories, and everything that makes you smile.
+Happy birthday! 💖  
 
-You genuinely have a really nice vibe around you, and conversations always feel lighter and more fun because of that.
+I hope your day is filled with warm smiles, cozy moments, delicious cake, and just the right amount of birthday chaos to make it unforgettable 😌✨ Thank you for making every conversation brighter—your energy is so kind, playful, and genuinely so much fun 💛
 
-May this year bring you success, peace, exciting moments, and lots of reasons to stay happy.
+May this year bring you confidence, happy surprises, beautiful memories, and endless reasons to laugh until your stomach hurts (the good kind… though the “ate too much cake” kind is totally acceptable too 🎂😂). Talking to you feels like finding the wholesome side of the internet 😭✨💖
 
-And yes… may the inner Machli always stay energetic 🐟✨
+Aur haan important birthday business 😌☝️
+Machlii party me mujhe 2 samosa, ek coke, 4 chocolates aur ek pastry bhej dena 😤💖 Baaki pizza dinner ke liye order kar dena, birthday protocol follow hona chahiye 😂🍕
 
-Have an amazing birthday!`;
+Ab jao aur apna special day full birthday legend ki tarah enjoy karo 😌💅✨
 
-/** Subtle floating easter-egg phrases (Machli energy only) */
+Happy Birthday once again, Machliiiii 🐟💖🎂
+
+From,`;
+
 export const MACHLI_WHISPERS = [
   'machli energy',
   '🐟',

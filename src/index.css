@@ -4,15 +4,15 @@
   --font-display: "Cormorant Garamond", Georgia, serif;
   --font-sans: "DM Sans", system-ui, sans-serif;
 
-  --color-lavender-deep: #2d1b4e;
-  --color-midnight: #0f0a1f;
-  --color-royal: #6d28d9;
-  --color-rose-gold: #c9a87c;
-  --color-champagne: #f5d6e8;
-  --color-peach-soft: #ffd9c8;
+  --color-lavender-deep: #6f4f88;
+  --color-midnight: #0b0712;
+  --color-royal: #9a6ecb;
+  --color-rose-gold: #c585b5;
+  --color-champagne: #f7eff8;
+  --color-peach-soft: #e8c4df;
 
-  --shadow-luxury: 0 40px 90px rgba(15, 10, 31, 0.58), 0 8px 24px rgba(45, 27, 78, 0.35);
-  --shadow-card: 0 25px 50px rgba(45, 27, 78, 0.42);
+  --shadow-luxury: 0 32px 90px rgba(0, 0, 0, 0.55), 0 10px 28px rgba(88, 45, 102, 0.35);
+  --shadow-card: 0 28px 68px rgba(0, 0, 0, 0.45);
 }
 
 * {
@@ -28,7 +28,8 @@ body,
 
 body {
   font-family: var(--font-sans);
-  color: #f8f4ff;
+  color: #f5edff;
+  background: #07050f;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
 }
@@ -40,10 +41,10 @@ body {
 /* Luxury mesh base */
 .bg-luxury-mesh {
   background:
-    radial-gradient(ellipse 70% 55% at 15% 25%, rgba(109, 40, 217, 0.38), transparent 55%),
-    radial-gradient(ellipse 55% 45% at 85% 20%, rgba(201, 168, 124, 0.22), transparent 50%),
-    radial-gradient(ellipse 60% 50% at 50% 95%, rgba(245, 214, 232, 0.18), transparent 55%),
-    linear-gradient(165deg, #0f0a1f 0%, #1a1035 32%, #2d1b4e 62%, #1e1540 100%);
+    radial-gradient(ellipse 70% 60% at 20% 20%, rgba(137, 85, 160, 0.18), transparent 45%),
+    radial-gradient(ellipse 50% 45% at 80% 18%, rgba(78, 44, 108, 0.18), transparent 48%),
+    radial-gradient(ellipse 55% 55% at 50% 95%, rgba(255, 255, 255, 0.08), transparent 45%),
+    linear-gradient(165deg, #06040c 0%, #0a0714 30%, #120b23 70%, #09040d 100%);
 }
 
 .glass-veil::after {
@@ -57,25 +58,31 @@ body {
 
 /* Paper texture */
 .paper-texture {
-  background-color: #faf6f0;
+  background-color: #100a19;
   background-image:
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.045'/%3E%3C/svg%3E"),
-    linear-gradient(148deg, #fffef9 0%, #f8f0e8 42%, #f3ebe2 100%);
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.07'/%3E%3C/svg%3E"),
+    linear-gradient(148deg, #14101c 0%, #140c20 42%, #101023 100%);
 }
 
 .paper-cover {
   background:
-    linear-gradient(135deg, #3d2668 0%, #2d1b4e 38%, #4a2c6e 72%, #352055 100%),
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.07'/%3E%3C/svg%3E");
+    linear-gradient(135deg, #301f46 0%, #1a0d26 38%, #3f2165 72%, #1b0f28 100%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");
 }
 
 .perspective-scene {
   perspective: 2200px;
-  perspective-origin: 50% 42%;
+  perspective-origin: 50% 50%;
 }
 
 .preserve-3d {
   transform-style: preserve-3d;
+}
+
+@media (max-width: 640px) {
+  .perspective-scene {
+    perspective-origin: 50% 40%;
+  }
 }
 
 .backface-hidden {
@@ -133,5 +140,28 @@ body {
 
   .card-float {
     animation: none !important;
+  }
+}
+
+/* Inside card content styles */
+.drop-cap {
+  float: left;
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  line-height: 0.85;
+  margin-right: 0.6rem;
+  color: var(--color-rose-gold);
+  font-weight: 600;
+  display: inline-block;
+}
+
+.drop-rest {
+  display: inline-block;
+}
+
+@media (max-width: 640px) {
+  .drop-cap {
+    font-size: 1.8rem;
+    margin-right: 0.45rem;
   }
 }

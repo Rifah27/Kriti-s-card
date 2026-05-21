@@ -8,7 +8,7 @@ export function AmbientBackground() {
       <GradientMesh />
       <ParticleField />
       <MachliWhispers />
-      <div className="absolute inset-0 bg-linear-to-t from-midnight/50 via-transparent to-midnight/30" />
+      <div className="absolute inset-0 bg-linear-to-t from-[#11051a]/80 via-transparent to-[#06040c]/70" />
     </div>
   );
 }
