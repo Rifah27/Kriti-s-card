@@ -12,7 +12,7 @@ I hope your day is filled with warm smiles, cozy moments, delicious cake, and ju
 
 May this year bring you confidence, happy surprises, beautiful memories, and endless reasons to laugh until your stomach hurts (the good kind… though the “ate too much cake” kind is totally acceptable too 🎂😂). Talking to you feels like finding the wholesome side of the internet 😭✨💖
 
-Aur haan important birthday business 😌☝️
+Aur haan important birthday business 😌
 Machlii party me mujhe 2 samosa, ek coke, 4 chocolates aur ek pastry bhej dena 😤💖 Baaki pizza dinner ke liye order kar dena, birthday protocol follow hona chahiye 😂🍕
 
 Ab jao aur apna special day full birthday legend ki tarah enjoy karo 😌💅✨
