@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+
+  --color-lavender-deep: #2d1b4e;
+  --color-midnight: #0f0a1f;
+  --color-royal: #6d28d9;
+  --color-rose-gold: #c9a87c;
+  --color-champagne: #f5d6e8;
+  --color-peach-soft: #ffd9c8;
+
+  --shadow-luxury: 0 40px 90px rgba(15, 10, 31, 0.58), 0 8px 24px rgba(45, 27, 78, 0.35);
+  --shadow-card: 0 25px 50px rgba(45, 27, 78, 0.42);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #f8f4ff;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Luxury mesh base */
+.bg-luxury-mesh {
+  background:
+    radial-gradient(ellipse 70% 55% at 15% 25%, rgba(109, 40, 217, 0.38), transparent 55%),
+    radial-gradient(ellipse 55% 45% at 85% 20%, rgba(201, 168, 124, 0.22), transparent 50%),
+    radial-gradient(ellipse 60% 50% at 50% 95%, rgba(245, 214, 232, 0.18), transparent 55%),
+    linear-gradient(165deg, #0f0a1f 0%, #1a1035 32%, #2d1b4e 62%, #1e1540 100%);
+}
+
+.glass-veil::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(1px);
+  pointer-events: none;
+}
+
+/* Paper texture */
+.paper-texture {
+  background-color: #faf6f0;
+  background-image:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.045'/%3E%3C/svg%3E"),
+    linear-gradient(148deg, #fffef9 0%, #f8f0e8 42%, #f3ebe2 100%);
+}
+
+.paper-cover {
+  background:
+    linear-gradient(135deg, #3d2668 0%, #2d1b4e 38%, #4a2c6e 72%, #352055 100%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.07'/%3E%3C/svg%3E");
+}
+
+.perspective-scene {
+  perspective: 2200px;
+  perspective-origin: 50% 42%;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.fold-crease {
+  box-shadow: inset 10px 0 28px rgba(30, 20, 50, 0.14);
+}
+
+.glass-chip {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Ambient light sweep on cover */
+.ambient-sheen {
+  background: linear-gradient(
+    118deg,
+    transparent 35%,
+    rgba(255, 255, 255, 0.14) 48%,
+    transparent 58%
+  );
+  animation: sheen-drift 7s ease-in-out infinite;
+}
+
+@keyframes sheen-drift {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: translateX(-8%);
+  }
+  50% {
+    opacity: 0.65;
+    transform: translateX(8%);
+  }
+}
+
+.card-float {
+  will-change: transform;
+}
+
+.card-ground-shadow {
+  transform: translateX(-50%) rotateX(82deg);
+  transform-origin: center top;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ambient-sheen {
+    animation: none;
+  }
+
+  .card-float {
+    animation: none !important;
+  }
+}
