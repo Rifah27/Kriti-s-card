@@ -1,4 +1,3 @@
-/** Copy & identity — Kriti is primary; RK is the thoughtful sender. */
 export const CARD = {
   to: 'Kriti',
   from: 'RK',
